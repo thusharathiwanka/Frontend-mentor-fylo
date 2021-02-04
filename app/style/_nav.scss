@@ -1,0 +1,17 @@
+nav {
+   @include flex;
+   @include body-margin;
+   @include body-padding;
+   justify-content: space-between;
+   min-height: 20vh;
+
+   ul {
+      @include flex
+   }
+
+   a {
+      padding-left: 3rem;
+      color: $white-accent;
+      font-family: $header-font;
+   }
+}
