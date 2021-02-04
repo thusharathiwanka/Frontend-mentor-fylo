@@ -2,6 +2,7 @@
 $main-background-color: hsl(217, 28%, 15%);
 $footer-background-color: hsl(216, 53%, 9%);
 $reviews-background-color: hsl(219, 30%, 18%);
+$features-background-color: hsl(218, 28%, 13%);
 
 /* accent colors */
 $cyan-accent: hsl(176, 68%, 64%);
@@ -48,13 +49,18 @@ html {
 
 body {
    background: $main-background-color;
+   overflow-x: hidden;
 }
 
-h1 {
+h1, h3 {
    font-family: $header-font;
    color: $white-accent;
    font-size: $header-font-size;
    font-weight: 700;
+}
+
+h3 {
+   font-size: 1.2rem;
 }
 
 p {

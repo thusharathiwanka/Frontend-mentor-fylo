@@ -17,13 +17,18 @@ html {
 
 body {
   background: #1c2431;
+  overflow-x: hidden;
 }
 
-h1 {
+h1, h3 {
   font-family: "Raleway", serif;
   color: white;
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 p {
@@ -111,9 +116,8 @@ nav a {
 .hero .hero-background-pattern {
   position: absolute;
   left: 0%;
-  bottom: -20%;
+  bottom: 0%;
   z-index: -1;
-  width: 100%;
 }
 
 .hero-content {
@@ -146,5 +150,33 @@ nav a {
 
 .hero-content .cta {
   margin-bottom: 10rem;
+}
+
+.features {
+  background: #181f2a;
+}
+
+.features .features-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 300px 400px;
+      grid-template-rows: 300px 400px;
+  grid-gap: 2rem;
+}
+
+.features .feature-card {
+  text-align: center;
+  width: 78%;
+  margin: 0 auto;
+}
+
+.features h3 {
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
