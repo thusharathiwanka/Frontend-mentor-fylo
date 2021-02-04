@@ -35,7 +35,7 @@ p {
   color: white;
   font-family: "Open sans", sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 a {
@@ -65,6 +65,8 @@ ul {
   background: #339ecc;
   border-radius: 30px;
   margin: 2rem 0;
+  outline: none;
+  border: none;
 }
 
 nav {
@@ -77,8 +79,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto;
   max-width: 1140px;
@@ -99,8 +99,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 nav a {
@@ -130,8 +128,6 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -178,5 +174,74 @@ nav a {
 
 .features h3 {
   padding: 1rem;
+}
+
+.about {
+  background: #181f2a;
+  padding-bottom: 5rem;
+}
+
+.about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.about .text-content {
+  padding-left: 10rem;
+}
+
+.about h1 {
+  width: 20rem;
+  padding-bottom: 2rem;
+}
+
+.about p {
+  width: 30rem;
+}
+
+.about a {
+  font-family: "Raleway", serif;
+  color: #65e2d9;
+  margin-top: 2rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.about a:hover {
+  color: white;
+}
+
+.about a::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: #65e2d9;
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.about span {
+  height: .2rem;
+  width: 8rem;
+  background: #65e2d9;
+  display: block;
+  margin-top: .5rem;
 }
 /*# sourceMappingURL=style.css.map */
