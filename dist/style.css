@@ -59,6 +59,7 @@ ul {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .attribution a {
@@ -394,5 +395,100 @@ nav a:hover {
 
 footer {
   background: #0b1523;
+  padding-top: 18rem;
+  min-height: 62vh;
+}
+
+footer .footer-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+footer .footer-logo {
+  padding-bottom: 2rem;
+}
+
+footer a {
+  font-family: "Raleway", serif;
+  color: white;
+}
+
+footer p, footer a {
+  font-size: .8rem;
+}
+
+footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .location-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .phone, footer .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+footer .phone img, footer .email img {
+  padding-right: 1rem;
+}
+
+.location-link img {
+  padding-top: .5rem;
+  padding-right: 1rem;
+}
+
+.footer-links-1 a, .footer-links-2 a {
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.social-links a {
+  padding-left: 1rem;
+}
+
+.social-links svg:hover {
+  stroke: #65e2d9;
+  fill: #65e2d9;
 }
 /*# sourceMappingURL=style.css.map */

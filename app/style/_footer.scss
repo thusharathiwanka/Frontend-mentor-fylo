@@ -1,3 +1,70 @@
 footer {
    background: $footer-background-color;
+   padding-top: 18rem;
+   min-height: 62vh;
+
+   .footer-content {
+      @include body-margin;
+      @include body-padding;
+   }
+
+   .footer-logo {
+      padding-bottom: 2rem;
+   }
+
+   a {
+      font-family: $header-font;
+      color: $white-accent;
+   }
+
+   p, a {
+      font-size: .8rem
+   }
+
+   .footer-links {
+      @include flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+
+   .location-link {
+      @include flex;
+      width: 20rem;
+      align-items: flex-start;
+   }
+
+   .phone, .email {
+      @include flex;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+
+      img {
+         padding-right: 1rem;
+      }
+   }
+}
+
+.location-link {
+   img {
+     padding-top: .5rem;
+     padding-right: 1rem;
+   }
+}
+
+.footer-links-1, .footer-links-2 {
+   a {
+      display: inline-block;
+      padding-bottom: 1rem;
+   }
+}
+
+.social-links {
+   a {
+      padding-left: 1rem;
+   }
+
+   svg:hover {
+      stroke: $cyan-accent;
+      fill: $cyan-accent;
+   }
 }
