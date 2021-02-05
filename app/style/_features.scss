@@ -1,22 +1,27 @@
 .features {
-   background: $features-background-color;
-   
-   .features-content {
-      @include body-margin;
-      @include body-padding;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 300px 400px;
-      grid-gap: 2rem;
-   }
+  background: $features-background-color;
 
-   .feature-card {
-      text-align: center;
-      width: 78%;
-      margin: 0 auto;
-   }
+  .features-content {
+    @include body-margin;
+    @include body-padding;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 2rem;
 
-   h3 {
-      padding: 1rem;
-   }
+    @include tablet {
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px 300px 300px;
+    }
+  }
+
+  .feature-card {
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    padding: 1rem;
+  }
 }

@@ -9,4 +9,9 @@
    outline: none;
    border: none;
    white-space: nowrap;
+   transition: background .3s ease-in-out;
+
+   &:hover {
+      background: $cyan-accent;
+   }
 }

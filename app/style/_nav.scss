@@ -1,23 +1,32 @@
 nav {
-   @include flex;
-   @include body-margin;
-   @include body-padding;
-   justify-content: space-between;
-   min-height: 20vh;
+  @include flex;
+  @include body-margin;
+  @include body-padding;
+  justify-content: space-between;
+  min-height: 20vh;
+  flex-wrap: wrap;
 
-   ul {
-      @include flex
-   }
+  @media screen and (max-width: 519px) {
+    justify-content: center;
+  }
 
-   a {
-      padding-left: 3rem;
-      color: $white-accent;
-      font-family: $header-font;
-      transition: all 0.5s ease-in-out;
+  ul {
+    @include flex;
+  }
 
-      &:hover {
-         text-decoration: underline;
-         color: white;
-      }
-   }
+  a {
+    padding-left: 3rem;
+    color: $white-accent;
+    font-family: $header-font;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      color: white;
+    }
+
+    @media screen and (max-width: 519px) {
+      padding: 0 2.5rem;
+    }
+  }
 }

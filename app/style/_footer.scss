@@ -1,70 +1,102 @@
 footer {
-   background: $footer-background-color;
-   padding-top: 18rem;
-   min-height: 62vh;
+  background: $footer-background-color;
+  padding-top: 18rem;
+  min-height: 62vh;
 
-   .footer-content {
-      @include body-margin;
-      @include body-padding;
-   }
+  @include mobile-big {
+    padding-top: 10rem;
+  }
 
-   .footer-logo {
-      padding-bottom: 2rem;
-   }
+  @include mobile {
+    padding-top: 35rem;
+  }
 
-   a {
-      font-family: $header-font;
-      color: $white-accent;
-   }
+  .footer-content {
+    @include body-margin;
+    @include body-padding;
 
-   p, a {
-      font-size: .8rem
-   }
+    @include tablet-small {
+      text-align: center;
+    }
+  }
 
-   .footer-links {
-      @include flex;
-      justify-content: space-between;
-      align-items: flex-start;
-   }
+  .footer-logo {
+    padding-bottom: 2rem;
+  }
 
-   .location-link {
-      @include flex;
-      width: 20rem;
-      align-items: flex-start;
-   }
+  a {
+    font-family: $header-font;
+    color: $white-accent;
+  }
 
-   .phone, .email {
-      @include flex;
-      justify-content: space-between;
-      padding-bottom: 1rem;
+  p,
+  a {
+    font-size: 0.8rem;
+  }
 
-      img {
-         padding-right: 1rem;
-      }
-   }
+  .footer-links {
+    @include flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @include tablet-small {
+      justify-content: center;
+    }
+  }
+
+  .location-link {
+    @include flex;
+    width: 20rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .phone,
+  .email {
+    @include flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+
+    img {
+      padding-right: 1rem;
+    }
+  }
 }
 
 .location-link {
-   img {
-     padding-top: .5rem;
-     padding-right: 1rem;
-   }
+  padding-top: 1.5rem;
+
+  img {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+  }
 }
 
-.footer-links-1, .footer-links-2 {
-   a {
-      display: inline-block;
-      padding-bottom: 1rem;
-   }
+.footer-links-1,
+.footer-links-2 {
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: left;
+
+  a {
+    display: inline-block;
+    padding-bottom: 1rem;
+  }
 }
 
 .social-links {
-   a {
-      padding-left: 1rem;
-   }
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
 
-   svg:hover {
-      stroke: $cyan-accent;
-      fill: $cyan-accent;
-   }
+  a {
+    padding-left: 1rem;
+  }
+
+  svg:hover {
+    stroke: $cyan-accent;
+    fill: $cyan-accent;
+  }
 }

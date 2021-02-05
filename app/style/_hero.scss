@@ -1,31 +1,46 @@
 .hero {
-   position: relative;
+  position: relative;
+  background: url("../../images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
-   .hero-background-pattern {
-      position: absolute;
-      left: 0%;
-      bottom: 0%;
-      z-index: -1;
-      height: auto;
-      max-width: 100%;
-   }
+  @include tablet-small {
+    background: url("../../images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+  }
 }
 
 .hero-content {
-   @include flex;
-   flex-direction: column;
-   text-align: center;
+  @include flex;
+  flex-direction: column;
+  text-align: center;
 
-   h1 {
-      padding: 2.5rem 0;
-      width: 50rem;
-   }
+  @include small-desktop {
+    padding: 0 2rem;
+  }
 
-   p {
-      width: 30rem;
-   }
+  h1 {
+    padding: 2.5rem 0;
+    max-width: 50rem;
+  }
 
-   .cta {
-      margin-bottom: 10rem;
-   }
+  p {
+    width: 30rem;
+    padding: 0 2rem;
+
+    @include mobile {
+      width: 25rem;
+    }
+  }
+
+  .cta {
+    margin-bottom: 10rem;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+  }
 }

@@ -1,97 +1,145 @@
 .reviews {
-   background: $features-background-color;
-   position: relative;
-   min-height: 80vh;
+  background: $features-background-color;
+  position: relative;
+  min-height: 76vh;
 
-   .quote {
-      position: absolute;
-      top: 20%;
-      z-index: -1;
-      left: -1%
-   }
+  @media screen and (max-width: 831px) {
+    min-height: 112vh;
+  }
 
-   .reviews-content {
-      @include flex;
-      @include body-margin;
-      @include body-padding;
-      padding: 10rem 0 14rem 0;
-      justify-content: space-between;
-      position: relative;
-   }
+  .quote {
+    position: absolute;
+    top: 18%;
+    z-index: 0;
+    left: 2%;
 
-   .review-card {
-      width: 22rem;
-      background: $reviews-background-color;
-      border-radius: 5px;
-      padding: 2.5rem 1.5rem;
-      box-shadow: 10px 10px 20px $features-background-color;
-   }
+    @include small-desktop {
+      display: none;
+      pointer-events: none;
+    }
+  }
 
-   p {
-      font-size: .9rem;
-      line-height: 1.5;
-   }
+  .reviews-content {
+    @include flex;
+    @include body-margin;
+    @include body-padding;
+    flex-wrap: wrap;
+    padding: 8rem 0 14rem 0;
+    justify-content: space-between;
+    position: relative;
 
-   .profile {
-      @include flex;
-      justify-content: flex-start;
-      padding-top: 1.5rem;
+    @include small-desktop {
+      padding: 0 2rem;
+      justify-content: center;
+    }
+  }
 
-      p {
-         font-size: 0.7rem;
-         opacity: .5;
-      }
-   }
+  .review-card {
+    width: 22rem;
+    background: $reviews-background-color;
+    border-radius: 5px;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 10px 10px 20px $features-background-color;
 
-   .profile-picture {
-      border-radius: 50%;
-      width: 2rem;
-      margin-right: 1rem;
-   }
+    @include small-desktop {
+      margin-bottom: 3rem;
+    }
+  }
 
+  .review-card:nth-child(3) {
+    @include small-desktop {
+      margin: 0 2rem 3rem 2rem;
+    }
+
+    @include mobile-big {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .profile {
+    @include flex;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+
+    p {
+      font-size: 0.7rem;
+      opacity: 0.5;
+    }
+  }
+
+  .profile-picture {
+    border-radius: 50%;
+    width: 2rem;
+    margin-right: 1rem;
+  }
 }
 
 .newsletter {
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
-   .newsletter-content {
-      text-align: center;
-      background: $main-background-color;
-      width: 50rem;
-      padding: 2rem;
-      margin: 0 auto;
-      border-radius: 5px;
-      z-index: 100;
-   }
+  .newsletter-content {
+    text-align: center;
+    background: $main-background-color;
+    max-width: 50rem;
+    padding: 2rem;
+    border-radius: 5px;
 
-   button {
-      padding-left: 2rem;
-      padding-right: 2rem;
-   }
+    @include mobile-big {
+      width: 25rem;
+    }
 
-   p {
-      width: 40rem;
-      margin: 0 auto;
-   }
+    @include mobile {
+      width: 20rem;
+    }
+  }
 
-   h2 {
-      padding: 1rem;
-   }
+  button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-   form {
-      @include flex;
-   }
+  p {
+    width: 40rem;
+    margin: 0 auto;
 
-   input {
-      outline: none;
-      font-size: .8rem;
-      font-family: $header-font;
-      margin-right: 2rem;
-      padding: 1rem 2rem;
-      border-radius: 30px;
-      border: none;
-      width: 60%;
-   }
+    @include tablet-small {
+      width: 30rem;
+    }
+
+    @include mobile-big {
+      width: 100%;
+    }
+  }
+
+  h2 {
+    padding: 1rem;
+  }
+
+  form {
+    @include flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include tablet-small {
+      padding-top: 2rem;
+    }
+  }
+
+  input {
+    outline: none;
+    font-size: 0.8rem;
+    font-family: $header-font;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    width: 60%;
+  }
 }

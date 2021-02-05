@@ -20,79 +20,140 @@ $standard-font-size: 0.875rem;
 
 /* mixins */
 @mixin flex {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin body-margin {
-   max-width: 1440px;
-   margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @mixin body-padding {
-   max-width: 1140px;
-   margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 auto;
+}
+
+/* media queries */
+$small-desktop: 1200px;
+$tablet: 900px;
+$tablet-small: 800px;
+$mobile-big: 600px;
+$mobile: 400px;
+
+@mixin small-desktop {
+  @media screen and (max-width: $small-desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-small {
+  @media screen and (max-width: $tablet-small) {
+    @content;
+  }
+}
+
+@mixin mobile-big {
+  @media screen and (max-width: $mobile-big) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
 }
 
 /* global styles */
 html {
-   font-size: 100%;
+  font-size: 100%;
 }
 
-*, *::before, *::after {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-   background: $main-background-color;
-   overflow-x: hidden;
+  background: $main-background-color;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
-   font-family: $header-font;
-   color: $white-accent;
-   font-size: $header-font-size;
-   font-weight: 700;
+h1,
+h2,
+h3,
+h4 {
+  font-family: $header-font;
+  color: $white-accent;
+  font-size: $header-font-size;
+  font-weight: 700;
 }
 
 h2 {
-   font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-   font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 h4 {
-   font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 p {
-   color: $white-accent;
-   font-family: $standard-font;
-   font-weight: 400;
-   line-height: 1.8;
+  color: $white-accent;
+  font-family: $standard-font;
+  font-weight: 400;
+  line-height: 1.8;
 }
 
 a {
-   text-decoration: none;
-   font-size: $standard-font-size;
-   font-weight: 400;
+  text-decoration: none;
+  font-size: $standard-font-size;
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 ul {
-   list-style: none;
+  list-style: none;
 }
 
 .attribution {
-   font-size: 11px;
-   text-align: center;
-   margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .attribution a {
-   color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
+}
+
+@include small-desktop {
+  nav,
+  .hero-content,
+  .features-content,
+  .about-content,
+  .reviews-content,
+  .newsletter-content,
+  .footer-content {
+    padding: 0 2rem;
+  }
+}
+
+@include mobile-big {
+  html {
+    font-size: 80%;
+  }
 }
