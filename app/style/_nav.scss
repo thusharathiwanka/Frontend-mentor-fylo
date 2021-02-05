@@ -13,5 +13,11 @@ nav {
       padding-left: 3rem;
       color: $white-accent;
       font-family: $header-font;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+         text-decoration: underline;
+         color: white;
+      }
    }
 }

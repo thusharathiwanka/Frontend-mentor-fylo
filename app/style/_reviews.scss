@@ -1,0 +1,97 @@
+.reviews {
+   background: $features-background-color;
+   position: relative;
+   min-height: 80vh;
+
+   .quote {
+      position: absolute;
+      top: 20%;
+      z-index: -1;
+      left: -1%
+   }
+
+   .reviews-content {
+      @include flex;
+      @include body-margin;
+      @include body-padding;
+      padding: 10rem 0 14rem 0;
+      justify-content: space-between;
+      position: relative;
+   }
+
+   .review-card {
+      width: 22rem;
+      background: $reviews-background-color;
+      border-radius: 5px;
+      padding: 2.5rem 1.5rem;
+      box-shadow: 10px 10px 20px $features-background-color;
+   }
+
+   p {
+      font-size: .9rem;
+      line-height: 1.5;
+   }
+
+   .profile {
+      @include flex;
+      justify-content: flex-start;
+      padding-top: 1.5rem;
+
+      p {
+         font-size: 0.7rem;
+         opacity: .5;
+      }
+   }
+
+   .profile-picture {
+      border-radius: 50%;
+      width: 2rem;
+      margin-right: 1rem;
+   }
+
+}
+
+.newsletter {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+
+   .newsletter-content {
+      text-align: center;
+      background: $main-background-color;
+      width: 50rem;
+      padding: 2rem;
+      margin: 0 auto;
+      border-radius: 5px;
+      z-index: 100;
+   }
+
+   button {
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+
+   p {
+      width: 40rem;
+      margin: 0 auto;
+   }
+
+   h2 {
+      padding: 1rem;
+   }
+
+   form {
+      @include flex;
+   }
+
+   input {
+      outline: none;
+      font-size: .8rem;
+      font-family: $header-font;
+      margin-right: 2rem;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      border: none;
+      width: 60%;
+   }
+}

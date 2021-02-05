@@ -20,15 +20,23 @@ body {
   overflow-x: hidden;
 }
 
-h1, h3 {
+h1, h2, h3, h4 {
   font-family: "Raleway", serif;
   color: white;
   font-size: 2.4rem;
   font-weight: 700;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 h3 {
   font-size: 1.2rem;
+}
+
+h4 {
+  font-size: .9rem;
 }
 
 p {
@@ -67,6 +75,7 @@ ul {
   margin: 2rem 0;
   outline: none;
   border: none;
+  white-space: nowrap;
 }
 
 nav {
@@ -105,6 +114,13 @@ nav a {
   padding-left: 3rem;
   color: white;
   font-family: "Raleway", serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .hero {
@@ -116,6 +132,8 @@ nav a {
   left: 0%;
   bottom: 0%;
   z-index: -1;
+  height: auto;
+  max-width: 100%;
 }
 
 .hero-content {
@@ -243,5 +261,138 @@ nav a {
   background: #65e2d9;
   display: block;
   margin-top: .5rem;
+}
+
+.reviews {
+  background: #181f2a;
+  position: relative;
+  min-height: 80vh;
+}
+
+.reviews .quote {
+  position: absolute;
+  top: 20%;
+  z-index: -1;
+  left: -1%;
+}
+
+.reviews .reviews-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10rem 0 14rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.reviews .review-card {
+  width: 22rem;
+  background: #202a3c;
+  border-radius: 5px;
+  padding: 2.5rem 1.5rem;
+  -webkit-box-shadow: 10px 10px 20px #181f2a;
+          box-shadow: 10px 10px 20px #181f2a;
+}
+
+.reviews p {
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.reviews .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 1.5rem;
+}
+
+.reviews .profile p {
+  font-size: 0.7rem;
+  opacity: .5;
+}
+
+.reviews .profile-picture {
+  border-radius: 50%;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.newsletter {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.newsletter .newsletter-content {
+  text-align: center;
+  background: #1c2431;
+  width: 50rem;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.newsletter button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.newsletter p {
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.newsletter h2 {
+  padding: 1rem;
+}
+
+.newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter input {
+  outline: none;
+  font-size: .8rem;
+  font-family: "Raleway", serif;
+  margin-right: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  width: 60%;
+}
+
+footer {
+  background: #0b1523;
 }
 /*# sourceMappingURL=style.css.map */
