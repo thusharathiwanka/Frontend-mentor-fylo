@@ -498,6 +498,22 @@ nav a:hover {
           transform: translateX(-50%);
 }
 
+@media screen and (max-width: 600px) {
+  .newsletter {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 4rem;
+  }
+}
+
 .newsletter .newsletter-content {
   text-align: center;
   background: #1c2431;
@@ -584,13 +600,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   footer {
-    padding-top: 10rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  footer {
-    padding-top: 35rem;
+    padding-top: 4rem;
   }
 }
 

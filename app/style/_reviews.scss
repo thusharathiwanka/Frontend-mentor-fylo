@@ -85,6 +85,12 @@
   left: 50%;
   transform: translateX(-50%);
 
+  @include mobile-big {
+    position: relative;
+    @include flex;
+    padding-bottom: 4rem;
+  }
+
   .newsletter-content {
     text-align: center;
     background: $main-background-color;

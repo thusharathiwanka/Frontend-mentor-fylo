@@ -4,11 +4,7 @@ footer {
   min-height: 62vh;
 
   @include mobile-big {
-    padding-top: 10rem;
-  }
-
-  @include mobile {
-    padding-top: 35rem;
+    padding-top: 4rem;
   }
 
   .footer-content {
