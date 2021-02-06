@@ -102,8 +102,9 @@ ul {
   outline: none;
   border: none;
   white-space: nowrap;
-  -webkit-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .cta:hover {
@@ -590,6 +591,10 @@ nav a:hover {
   border-radius: 30px;
   border: none;
   width: 60%;
+}
+
+.newsletter .error {
+  color: #ff4242;
 }
 
 footer {

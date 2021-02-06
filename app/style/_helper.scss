@@ -1,17 +1,18 @@
 .cta {
-   color: $white-accent;
-   font-family: $header-font;
-   font-size: $standard-font-size;
-   padding: 1rem 6rem;
-   background: $blue-accent;
-   border-radius: 30px;
-   margin: 2rem 0;
-   outline: none;
-   border: none;
-   white-space: nowrap;
-   transition: background .3s ease-in-out;
+  color: $white-accent;
+  font-family: $header-font;
+  font-size: $standard-font-size;
+  padding: 1rem 6rem;
+  background: $blue-accent;
+  border-radius: 30px;
+  margin: 2rem 0;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
 
-   &:hover {
-      background: $cyan-accent;
-   }
+  &:hover {
+    background: $cyan-accent;
+  }
 }
